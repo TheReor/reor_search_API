@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+body {
+background-color: rgb(230, 222, 222);
+}
+
+#container {
+  padding-top: 3px;
+  padding-right: 5px;
+  padding-left: 3px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(214, 214, 214);
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-family: 'Pacifico', cursive;
+  text-shadow: 0px 1px 2px;
+}
+
+#cities_val {
+  border-radius: 30px;
+  font-family: 'Indie Flower', cursive;
+  box-shadow: 0px 0px 5px red;
+}
+
+#currency_list_from {
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px red;
+}
+
+#row {
+  margin-bottom: 10px;
+}
+
+#map_container {
+  display: flex;
+  justify-content: center;
+}
+
+#map {
+  height: 200px;
+  width: 95vw;
+  border-radius: 5px;
+  box-shadow: 0px 1px 5px black;
+}
+
+#google_map {
+  margin-bottom: 10px;
+}
+
+#currency {
+  background-color: rgb(127, 127, 150);
+  margin: 0 auto 10px auto;
+  width: 70%;
+  border-radius: 20px;
+  box-shadow: 0px 1px 5px;
+}
+
+/* Weather */
+#weather {
+  background-color: rgba(99, 117, 218, 0.397);
+  margin: 0 auto 10px auto;
+  width: 70%;
+  border-radius: 20px;
+  box-shadow: 0px 0px 8px rgb(0, 14, 211);
+}
+
+#results p {
+  color: rgb(99, 66, 66);
+  font-size: 20px;
+  font-family: 'Stylish', sans-serif;
+}
+
+#results .temp {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+#results .humidity {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+#results .wind {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+#results .city {
+  font-size: 20px;
+  font-weight: 900;
+  color: rgb(100, 34, 34);
+}
+
+footer p {
+  float: left;
+}

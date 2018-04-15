@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reor Search</title>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Stylish" rel="stylesheet">
+    <link rel="icon" href="pictures/tab_logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main_container">
+
+        <header>
+
+            <h1>Reor Search</h1>
+
+            <form id="search_form">
+                <div id="row">
+                    <input type="text" placeholder="Search city..." id="cities_val">
+                    <button type="submit" id="currency_list_from">Click
+                    </button>
+                </div>
+            </form>
+        </header>
+
+        <!--Google maps-->
+        <div id="map_container">
+            <div id="google_map">
+                <div id="map"></div>
+            </div>
+        </div>
+
+
+        <!--Weather-->
+        <div id="weather">
+            <form>
+                <div id="results">
+                    <p>Temp</p>
+                    <div class="temp"></div>
+                    <p>Wind</p>
+                    <div class="wind "></div>
+                    <p>Humidity</p>
+                    <div class="humidity"></div>
+                </div>
+            </form>
+        </div>
+        <!--Currency-->
+        <form id="currency">
+
+            <p>From</p>
+            <select id="currency_list_from1">
+                <option value="USD">USD</option>
+                <option value="GBP">GBP</option>
+                <option value="SEK">SEK</option>
+            </select>
+
+            <p>To</p>
+            <select id="currency_list_to1">
+                <option value="USD">USD</option>
+                <option value="GBP">GBP</option>
+                <option value="SEK">SEK</option>
+            </select>
+
+            <div>
+                <input type="text" placeholder="Enter amount..." id="get_exchange">
+                <button type="submit" id="btn2">ENTER</button>
+                <article id="search_results"></article>
+            </div>
+        </form>
+        <!--Main ontainer close tag-->
+    </div>
+
+<footer>
+    <p>&copy; Damian We</p>
+</footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js " integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin=" anonymous "></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true&libraries=places%22%3E"></script>
+    <script src="app.js"></script>
+    <script src="json.js"></script>
+    <script src="weather_api/ajax.js"></script>
+    <script src="pictures_api/ajax.js"></script>
+</body>
+
+</html>
